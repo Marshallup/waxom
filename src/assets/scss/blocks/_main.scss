@@ -1,0 +1,134 @@
+.main {
+  padding-top: 40px;
+  height: 1024px;
+  background: url("/assets/img/bg_main.jpg") center center/cover no-repeat;
+  &__logo {
+    display: flex;
+    align-items: center;
+    font-family: "Raleway", sans-serif;
+    font-size: 34px;
+    font-weight: 300;
+    color: white;
+  }
+  &__icons {
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+  }
+}
+.menu__waxom {
+  display: flex;
+  justify-content: space-between;
+  list-style-type: none;
+  &_link a {
+    font-family: "Montserrat", sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+    color: white;
+  }
+  &_link a:hover {
+    color: #c7b299;
+  }
+}
+
+.burger__wrap {
+  height: 24px;
+  display: none;
+}
+.burger {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  margin: 0 auto;
+
+  &::before,
+  &::after {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  &::before {
+    top: -8px;
+  }
+  &::after {
+    bottom: -8px;
+  }
+}
+
+.burger,
+.burger::before,
+.burger::after {
+  width: 26px;
+  height: 2px;
+  background-color: #fff;
+}
+
+.main__block {
+  margin-top: 285px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  color: #ffffff;
+  font-family: "Raleway", sans-serif;
+
+  &_subtitle {
+    font-size: 36px;
+  }
+  &_text {
+    margin-top: 19px;
+    line-height: 1.5;
+    font-weight: 300;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .main {
+    &__logo-center {
+      display: flex;
+      justify-content: center;
+      span {
+        display: none;
+      }
+    }
+    &__icons {
+      justify-content: center;
+    }
+  }
+  .menu__waxom_col {
+    position: static;
+  }
+  .menu__waxom {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    background-color: black;
+    left: -100%;
+    width: 70%;
+    height: 100%;
+    z-index: 2;
+    transition: all 1s;
+
+    &_link {
+      margin: 12px 0;
+      a {
+        font-size: 18px;
+      }
+    }
+
+    &_active {
+      left: 0;
+    }
+  }
+  .burger__wrap {
+    display: block;
+  }
+  .img__cart {
+    display: none;
+  }
+}

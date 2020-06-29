@@ -1,0 +1,50 @@
+.button__base {
+  width: 170px;
+  height: 53px;
+  border: none;
+  border-radius: 3px;
+  background-color: #998675;
+  box-shadow: inset 0px -3px 0 0 #736357;
+  font-family: "Raleway", sans-serif;
+  font-size: 14px;
+  font-weight: 800;
+  color: white;
+  cursor: pointer;
+
+  &:hover {
+    animation: shake-bottom 0.8s cubic-bezier(0.455, 0.03, 0.515, 0.955) both;
+
+    @keyframes shake-bottom {
+      0%,
+      100% {
+        transform: rotate(0deg);
+        transform-origin: 50% 100%;
+      }
+      10% {
+        transform: rotate(2deg);
+      }
+      20%,
+      40%,
+      60% {
+        transform: rotate(-4deg);
+      }
+      30%,
+      50%,
+      70% {
+        transform: rotate(4deg);
+      }
+      80% {
+        transform: rotate(-2deg);
+      }
+      90% {
+        transform: rotate(2deg);
+      }
+    }
+  }
+}
+.button__main {
+  margin-top: 52px;
+}
+.button__projects {
+  margin-top: 30px;
+}

@@ -1,0 +1,59 @@
+.mobile {
+  padding-top: 80px;
+
+  @media screen and (max-width: 991px) {
+    &__hand {
+      margin-top: 20px;
+      text-align: center;
+
+      img {
+        width: 300px;
+      }
+    }
+
+    &__text {
+      margin-top: 0 !important;
+      .waxom__title_mobile,
+      .waxom__descr_mobile {
+        text-align: center !important;
+      }
+    }
+
+    &__point::before {
+      margin: 0 19px 12px 15px !important;
+    }
+  }
+  @media screen and (max-width: 767px) {
+    padding-top: 50px;
+  }
+
+  &__hand {
+    font-size: 0;
+  }
+
+  &__text {
+    margin-top: 120px;
+  }
+
+  &__list {
+    margin: 40px 0 0;
+    padding: 0;
+    text-align: left;
+  }
+
+  &__point {
+    list-style-type: none;
+    display: flex;
+    font-size: 15px;
+
+    &::before {
+      content: "";
+      display: block;
+      margin: 0 19px 12px 40px;
+      width: 21px;
+      height: 21px;
+      background: url("/assets/img/icons/point.png") center center/cover
+        no-repeat;
+    }
+  }
+}

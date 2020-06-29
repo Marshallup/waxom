@@ -1,0 +1,44 @@
+.statistics {
+  background: linear-gradient(to top, #211b19, #4e3427);
+  @media screen and (max-width: 767px) {
+    &__flex {
+      display: flex;
+      justify-content: center;
+    }
+    &__wrap {
+      margin-top: 30px;
+    }
+  }
+  &__block {
+    margin: 70px 0 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    @media screen and (max-width: 767px) {
+      width: 166px;
+      margin-top: 40px;
+    }
+  }
+
+  &__wrap {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    &_number {
+      margin-top: 15px;
+      font-family: "Montserrat", sans-serif;
+      font-size: 48px;
+      font-weight: 500;
+      color: #ffffff;
+    }
+
+    &_line {
+      margin-top: 20px;
+      width: 30px;
+      height: 2px;
+      background-color: #ffffff;
+    }
+  }
+}

@@ -1,0 +1,52 @@
+body a {
+  text-decoration: none;
+}
+.no-scroll {
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  overflow: hidden;
+}
+.readMore {
+  position: relative;
+  padding-bottom: 20px;
+  margin: 20px 0 0 19px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 13px;
+  color: #c7b299;
+
+  &__navigation {
+    margin: 23px 0 0 0;
+    color: #d1d1d1;
+
+    &::after {
+      content: "";
+      border-left: 5px solid #d1d1d1 !important;
+    }
+  }
+
+  &::after {
+    content: "";
+    top: 6px;
+    margin-left: 10px;
+    transform: translateY(-2.5px);
+    position: absolute;
+    border: 5px solid transparent;
+    border-left: 5px solid #c7b299;
+  }
+}
+@import "vars";
+@import "mixins";
+@import "elements/buttons";
+@import "elements/text";
+@import "blocks/main";
+@import "blocks/capability";
+@import "blocks/presentation";
+@import "blocks/projects";
+@import "blocks/video";
+@import "blocks/mobile";
+@import "blocks/statistics";
+@import "blocks/posts";
+@import "blocks/partners";
+@import "blocks/navigation";
+@import "blocks/footer";

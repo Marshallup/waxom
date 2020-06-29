@@ -1,0 +1,101 @@
+.posts {
+  &__slider {
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    @media screen and (max-width: 991px) {
+      margin-top: 20px;
+      &_wrap {
+        margin-top: 20px;
+      }
+    }
+    @media screen and (max-width: 767px) {
+      margin-top: 20px;
+      justify-content: center;
+      &_wrap {
+        margin-top: 20px;
+      }
+    }
+    &_wrap {
+      width: 300px;
+      cursor: pointer;
+
+      &:hover {
+        .slider__img {
+          position: absolute;
+          background-color: rgba($color: #000000, $alpha: 0.5);
+          width: 100%;
+          height: 100%;
+        }
+        .slider__data {
+          z-index: 2;
+        }
+        .slider__number {
+          background-color: #c7b299;
+        }
+        .slider__month {
+          background-color: #a48d72;
+        }
+        .posts__slider_text {
+          background-color: #362f2d;
+        }
+        .waxom__title_slider {
+          color: #c7b299;
+        }
+        .waxom__descr_slider {
+          color: white;
+        }
+        .slider__img,
+        .slider__data,
+        .slider__number,
+        .slider__month,
+        .posts__slider_text,
+        .waxom__title_slider,
+        .waxom__descr_slider {
+          transition: all 0.5s;
+        }
+      }
+    }
+    &_photo {
+      position: relative;
+      text-align: center;
+      .slider__data {
+        position: absolute;
+        text-align: center;
+        top: 15px;
+        left: 15px;
+      }
+
+      .slider__number {
+        border-radius: 3px 3px 0 0;
+        width: 40px;
+        height: 35px;
+        background-color: #363636;
+        font-size: 23px;
+        color: #ffffff;
+      }
+      .slider__month {
+        border-radius: 0 0 3px 3px;
+        height: 25px;
+        background-color: #252525;
+        font-size: 11px;
+        color: #ffffff;
+      }
+
+      .slider__month,
+      .slider__number {
+        display: flex;
+        font-family: "Montserrat", sans-serif;
+        justify-content: center;
+        align-items: center;
+      }
+
+      img {
+        display: block;
+        font-size: 0;
+        width: 300px;
+      }
+    }
+  }
+}

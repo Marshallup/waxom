@@ -1,0 +1,42 @@
+.video {
+  background: url("/assets/img/video.jpg") center center/cover no-repeat;
+  padding: 210px 0;
+  margin-top: 80px;
+  text-align: center;
+  color: white;
+  @media screen and (max-width: 767px) {
+    padding: 50px 0;
+  }
+
+  &__play {
+    position: relative;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 100px;
+    cursor: pointer;
+    z-index: 1;
+    &::before {
+      content: "";
+      border-radius: 100%;
+      display: block;
+      position: absolute;
+      width: 100px;
+      height: 100px;
+      opacity: 0.3;
+      background-color: #000000;
+      z-index: -1;
+    }
+  }
+
+  &__timer {
+    display: block;
+    margin-top: 40px;
+    font-size: 14px;
+    font-weight: 600;
+    font-family: "Montserrat", sans-serif;
+    color: #c7b299;
+  }
+}

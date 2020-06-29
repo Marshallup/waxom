@@ -1,0 +1,91 @@
+.waxom__title {
+  font-size: 30px;
+  font-family: "Raleway", sans-serif;
+  text-align: center;
+  color: #555555;
+  font-weight: 600;
+
+  &_main {
+    font-size: 52px;
+    font-weight: 800;
+    color: white;
+  }
+  &_presentation {
+    margin: 0;
+    font-weight: 700;
+  }
+  &_video {
+    margin-top: 44px;
+    color: white;
+  }
+  &_mobile {
+    text-align: left !important;
+  }
+  &_posts {
+    margin-top: 70px;
+  }
+  &_slider {
+    padding: 20px 0 0 19px;
+    font-size: 17px;
+    text-align: left !important;
+  }
+  &_navigation {
+    margin-top: 94px;
+    text-align: left !important;
+    font-size: 24px;
+    color: #ffffff;
+
+    @media screen and (max-width: 767px) {
+      & {
+        margin-top: 40px;
+      }
+    }
+  }
+}
+
+.waxom__descr {
+  font-family: "Montserrat", sans-serif;
+  font-size: 15px;
+  text-align: center;
+  line-height: 1.75;
+  font-weight: 300;
+  color: #8c8c8c;
+
+  &_main {
+    margin-top: 19px;
+    color: white;
+  }
+  &_projects {
+    margin-top: 20px;
+  }
+  &_video {
+    margin-top: 29px;
+    color: white;
+  }
+  &_mobile {
+    margin-top: 30px;
+    text-align: left !important;
+  }
+  &_statistics {
+    margin-top: 8px;
+    font-size: 13px;
+    font-weight: 600;
+    text-transform: uppercase;
+    line-height: 1.43 !important;
+    color: #c7b299;
+  }
+  &_posts {
+    margin-top: 20px;
+  }
+  &_slider {
+    margin: 10px 0 0 19px;
+    font-size: 13px;
+    text-align: left !important;
+    line-height: 1.57 !important;
+  }
+  &_navigation {
+    margin-top: 19px;
+    text-align: left !important;
+    font-size: 13px;
+  }
+}
