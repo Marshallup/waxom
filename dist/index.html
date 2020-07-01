@@ -11,7 +11,7 @@
 </head><body>
     <!-- <h1>HomePage</h1>
  -->
-    <div class="main">
+    <div id="main" class="main">
       <div class="container">
         <div class="row align-items-center">
           <div class="col-xl-2 col-lg-3 col-8 order-2 order-lg-1">
@@ -23,18 +23,20 @@
           <div
             class="col-xl-7 offset-xl-1 col-lg-8 col-2 order-1 order-lg-2 menu__waxom_col"
           >
-            <div class="burger__wrap">
-              <div class="burger"></div>
-            </div>
+            <!-- <div class="burger__wrap"> -->
+            <div class="burger"><span></span></div>
+            <!-- </div> -->
             <nav class="menu__waxom">
-              <li class="menu__waxom_link"><a href="#">Главная</a></li>
-              <li class="menu__waxom_link"><a href="#">О нас</a></li>
-              <li class="menu__waxom_link"><a href="#">Портфолио</a></li>
-              <li class="menu__waxom_link"><a href="#">Возможности</a></li>
-              <li class="menu__waxom_link"><a href="#">Блог</a></li>
-              <li class="menu__waxom_link"><a href="#">Цены</a></li>
-              <li class="menu__waxom_link"><a href="#">Шорткоды</a></li>
-              <li class="menu__waxom_link"><a href="#">Контакты</a></li>
+              <li class="menu__waxom_link"><a href="#main">Главная</a></li>
+              <li class="menu__waxom_link"><a href="#about">О нас</a></li>
+              <li class="menu__waxom_link"><a href="#portfolio">Портфолио</a></li>
+              <li class="menu__waxom_link">
+                <a href="#advantages">Возможности</a>
+              </li>
+              <li class="menu__waxom_link"><a href="#blog">Блог</a></li>
+              <li class="menu__waxom_link"><a href="#prices">Цены</a></li>
+              <li class="menu__waxom_link"><a href="#shorts">Шорткоды</a></li>
+              <li class="menu__waxom_link"><a href="#contacts">Контакты</a></li>
             </nav>
           </div>
           <div class="col-xl-1 offset-xl-1 col-lg-1 col-2 order-3 order-lg-3">
@@ -60,7 +62,7 @@
         </div>
       </div>
     </div>
-    <div class="capability">
+    <div id="about" class="capability">
       <div class="container">
         <div class="row">
           <div class="col-md-3 col-sm-6 col-6">
@@ -118,7 +120,7 @@
         </div>
       </div>
     </div>
-    <div class="presentation">
+    <div id="advantages" class="presentation">
       <div class="container">
         <div class="row">
           <div class="col-md-6 offset-md-3">
@@ -143,7 +145,7 @@
         </div>
       </div>
     </div>
-    <div class="projects">
+    <div id="portfolio" class="projects">
       <div class="container">
         <div class="row">
           <div class="col-md-6 offset-md-3">
@@ -362,7 +364,7 @@
         </div>
       </div>
     </section>
-    <div class="statistics">
+    <div id="prices" class="statistics">
       <div class="container">
         <div class="row">
           <div class="statistics__flex col-xl-10 offset-xl-1 col-12">
@@ -422,7 +424,7 @@
         </div>
       </div>
     </div>
-    <div class="posts">
+    <div id="blog" class="posts">
       <div class="container">
         <div class="row">
           <div class="col-xl-4 offset-xl-4">
@@ -512,7 +514,7 @@
         </div>
       </div>
     </div>
-    <section class="partners">
+    <section id="contacts" class="partners">
       <div class="container">
         <div class="row align-items-center justify-content-center">
           <div class="col-xl-3 col-lg-3">
@@ -530,7 +532,7 @@
         </div>
       </div>
     </section>
-    <section class="navigation">
+    <section id="shorts" class="navigation">
       <div class="container">
         <div class="row">
           <div class="col-xl-3 col-lg-6 col-md-6">
